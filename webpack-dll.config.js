@@ -2,7 +2,7 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const dirVars = require('./webpack-config/base/dir-vars.config.js') // 与业务代码共用同一份路径的配置表
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const ROOT_PATH = dirVars.srcRootDir
+let ROOT_PATH = dirVars.srcRootDir
 module.exports = {
     output: {
         path: dirVars.dllDir,
@@ -15,7 +15,9 @@ module.exports = {
           或是css/less/图片/字体文件等资源，但注意要在module参数配置好相应的loader
         */
         dll: [
-            './vendor/jquery.min',
+            'zepto',
+            'fastclick',
+            'web-storage-cache',
             './src/public-resource/sass/database.scss',
             './src/public-resource/sass/common.scss'
         ]
@@ -45,11 +47,6 @@ module.exports = {
                 warnings: false
             }
         })
-        /*new webpack.LoaderOptionsPlugin({
-          options: {
-            postcss: require('./webpack-config/vendor/postcss.config.js'),
-          },
-        }),*/
     ],
     module: require('./webpack-config/module.product.config.js'), // 沿用业务代码的module配置
     resolve: require('./webpack-config/resolve.config.js') // 沿用业务代码的resolve配置

@@ -1,5 +1,5 @@
-var dirVars = require('./base/dir-vars.config.js')
-const moduleConfig = require('./inherit/module.config.js')
+let dirVars = require('./base/dir-vars.config.js')
+let moduleConfig = require('./inherit/module.config.js')
 
 /*
   由于ExtractTextPlugin不支持热更新，因此选择在开发环境下直接用style-loader加载样式。

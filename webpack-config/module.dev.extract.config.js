@@ -47,12 +47,13 @@ moduleConfig.rules.push({
             {
                 loader: 'css-loader',
                 options: {
-                    minimize: true
+                    sourceMap: true
                 }
             },
             {
                 loader: 'postcss-loader',
                 options: {
+                    sourceMap: true,
                     plugins: (loader) => [
                         require('precss'),
                         require('autoprefixer')({
@@ -63,7 +64,10 @@ moduleConfig.rules.push({
                     ]
                 }
             }, {
-                loader: 'sass-loader' // 将 Sass 编译成 CSS
+                loader: 'sass-loader',
+                options: {
+                    sourceMap: true
+                }
             }
         ]
     })

@@ -1,6 +1,6 @@
-var dirVars = require('../base/dir-vars.config.js')
-var eslintFormatter = require('eslint-friendly-formatter')
-var path = require('path')
+let dirVars = require('../base/dir-vars.config.js')
+let eslintFormatter = require('eslint-friendly-formatter')
+let path = require('path')
 
 module.exports = {
     rules: [

@@ -60,6 +60,10 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
+    "fastclick": "^1.0.6",
+    "jquery": "^2.1.4",
+    "swiper": "^3.4.2",
+    "web-storage-cache": "^1.0.3",
+    "zepto": "^1.2.0"
   }
 }

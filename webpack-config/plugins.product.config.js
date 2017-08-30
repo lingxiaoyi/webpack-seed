@@ -1,4 +1,4 @@
-let webpack = require('webpack')
+const webpack = require('webpack')
 let pluginsConfig = require('./inherit/plugins.config.js')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 let dirlets = require('./base/dir-vars.config.js')

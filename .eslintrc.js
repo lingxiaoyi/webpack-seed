@@ -43,15 +43,15 @@ module.exports = {
         'prefer-arrow-callback': 0,
         'prefer-rest-params': 0,
         'no-param-reassign': 0,
-        'max-len': [
+       /* 'max-len': [
             'error', {
-                'code': 200,
+                'code': 2000,
                 'tabWidth': 4,
                 'comments': 200,
                 'ignoreComments': false,
                 'ignoreTrailingComments': false,
                 'ignoreUrls': true,
-            }],
+            }],*/
         'global-require': 0,
         'no-restricted-syntax': [
             2,
