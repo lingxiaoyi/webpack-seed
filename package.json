@@ -6,6 +6,7 @@
     "build": "./node_modules/.bin/webpack --progress --colors --bail",
     "dev": "./node_modules/.bin/webpack --progress --colors --config ./webpack.dev.config.js",
     "start": "./node_modules/.bin/webpack-dev-server --config ./webpack.dev.config.js --open --hot",
+    "soucemap": "./node_modules/.bin/webpack-dev-server --config ./webpack.dev.soucemap.config.js --open --hot",
     "profile": "./node_modules/.bin/webpack --colors --profile --display-modules --config ./webpack.dev.config.js",
     "dll": "./node_modules/.bin/webpack --progress --colors --config ./webpack-dll.config.js",
     "analyse": "webpack --json > ./build/stats.json && webpack-bundle-analyzer --port 8989 ./build/stats.json",
@@ -51,6 +52,7 @@
     "postcss-loader": "^1.2.2",
     "precss": "^1.4.0",
     "sass-loader": "^6.0.6",
+    "script-loader": "^0.7.0",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.5.5",
@@ -62,6 +64,7 @@
     "bootstrap": "^3.3.7",
     "fastclick": "^1.0.6",
     "jquery": "^2.1.4",
+    "n-zepto": "^1.2.0",
     "swiper": "^3.4.2",
     "web-storage-cache": "^1.0.3",
     "zepto": "^1.2.0"

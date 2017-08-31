@@ -48,9 +48,9 @@ moduleConfig.rules.push({
         },
         {
             loader: 'css-loader', // 将 CSS 转化成 CommonJS 模块
-            /*options: {
+            options: {
                 sourceMap: true
-            }*/
+            }
         },
         {
             loader: 'postcss-loader',
@@ -67,9 +67,9 @@ moduleConfig.rules.push({
             }
         }, {
             loader: 'sass-loader',
-            /*options: {
+            options: {
                 sourceMap: true
-            } */// 将 Sass 编译成 CSS
+            } // 将 Sass 编译成 CSS
         }
     ]
 })

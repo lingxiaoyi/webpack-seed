@@ -21,7 +21,7 @@ module.exports = {
     // add your custom rules here
     rules: {
         // allow debugger during development
-        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+        'no-debugger':/* process.env.NODE_ENV === 'production' ? 2 :*/ 0,
         'camelcase': 0,
         "dot-location": [2, "property"], // 强制使用.号取属性     .换行不报错
         'no-extra-boolean-cast': 0,

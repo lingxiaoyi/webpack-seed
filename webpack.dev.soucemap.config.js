@@ -3,8 +3,7 @@ module.exports = {
 
     output: require('./webpack-config/output.config.js'),
 
-    module: require('./webpack-config/module.dev.config.js'),
-    //module: require('./webpack-config/module.dev.extract.config.js'), //尽量不要用 提取会影响速度  并且会影响样式的热记载
+    module: require('./webpack-config/module.dev.soucemap.config.js'), //开启css soucemap
 
     resolve: require('./webpack-config/resolve.config.js'),
 

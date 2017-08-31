@@ -9,10 +9,10 @@ let HashOutput = require('webpack-plugin-hash-output')
 let configPlugins = [
     /* 全局shimming */
     new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        'window.$': 'jquery',
+        $: 'n-zepto',
+        Zepto: 'n-zepto',
+        'window.Zepto': 'n-zepto',
+        'window.$': 'n-zepto',
         Vue: 'vue',
         vue: 'vue'
     }),
